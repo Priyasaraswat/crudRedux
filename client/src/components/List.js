@@ -10,7 +10,7 @@ const List = ( {id,task,setUpdateUI,updateMode}) => {
   const dispatch=useDispatch();
 
     const removeTask=()=>{
-       axios.delete(`http://localhost:5000/api/v1/task/${id}`).then((res)=>{
+       axios.delete(`/api/v1/task/${id}`).then((res)=>{
             // console.log(res);
             setUpdateUI((prev)=> !prev);
             dispatch(deleteTask(id))

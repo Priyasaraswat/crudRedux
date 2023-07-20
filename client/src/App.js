@@ -16,7 +16,7 @@ function App() {
   // console.log(Tasks);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/v1/tasks").then((res) => {
+    axios.get("/api/v1/tasks").then((res) => {
       // console.log(res.data);
 
       dispatch(getTasks(res.data));
@@ -25,7 +25,7 @@ function App() {
 
   const addTask1 = () => {
     axios
-      .post("http://localhost:5000/api/v1/task", { task: input })
+      .post("/api/v1/task", { task: input })
       .then((res) => {
         // console.log(res.data);
         setInput("");
@@ -42,7 +42,7 @@ function App() {
 
   const updateTask1 = () => {
     axios
-      .put(`http://localhost:5000/api/v1/task/${updateId}`, { task: input })
+      .put(`/api/v1/task/${updateId}`, { task: input })
       .then((res) => {
         console.log(res.data);
         dispatch(updateTask({ id: updateId, task: input }));
