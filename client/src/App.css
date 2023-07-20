@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.app{
+    height:100vh;
+    max-height: 100%;
+    width:100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    background-color: #011c4b;
+    color:#fff;
+}
+.app h1{
+     margin-top: 10vh;
+    
+    
+}
+.inputHolder{
+    display: flex;
+    align-items: center;
+}
+.inputHolder input{
+    border:none;
+    width:100%;
+    padding:0.3rem;
+    font:300 0.9rem cursive;
+}
+.inputHolder input:focus
+{
+    outline: none;
+}
+.inputHolder button{
+   
+    display: flex;
+    align-items: center;
+    height:1.8rem;
+    padding:3px;
+    color:#011c4b;
+    background-color: #b0c2e2;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+   
+}
+.inputHolder button svg{
+    /* font-size: 1.6rem;
+    justify-self: center; */
+}

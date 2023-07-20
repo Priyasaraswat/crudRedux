@@ -1,0 +1,21 @@
+.task{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding:0.3rem;
+    color:#000;
+    background-color: #ffff;
+    border-radius: 3px;
+    position: relative;
+    width: 19vw;
+    font:400 1rem cursive;
+}
+.task span{
+    display: flex;
+    right:0;
+    position: absolute;
+    gap:0.5rem;
+    cursor: pointer;
+}
